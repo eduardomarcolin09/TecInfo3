@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Rajdhani&display=swap');
+
+body{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu, #body, #footer {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#titulo {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: cadetblue;
+    text-align: center;
+    font-size: 45px;
+}
+
+#menu {
+    color: black;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+#menu input{
+    font-size: 20px;
+}
+
+#lista li{
+    font-size: 20px;
+}
+
+#footer {
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+#footer div {
+    width: 33.3%;
+    text-align: center;
+}
+#logo-footer {
+    width: 20%;
+}

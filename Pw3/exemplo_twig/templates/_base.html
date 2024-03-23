@@ -1,0 +1,25 @@
+{# templates/_base.html #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block titulo %}<title>Base</title>{% endblock %}
+    {# ou <title>{{titulo ?? 'Sem título}} </title>  dai dps eu passo uma variável no php de contato por exemplo eu passo uma variavel titulo com => contato#}
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+    <h1>Feira de Fruta</h1>
+    <p>
+        <a href="index.php">Inicio</a> |
+        <a href="compras.php">Compras</a> |
+        <a href="fruta.php">Escolha a sua fruta</a> |
+        <a href="sociedade.php">Importância da fruta na sociedade</a> |
+        <a href="contato.php">Contato</a> 
+    </p>
+    <hr>
+    {# Bloco vazio pq vai variar de página em página, e o _base.html serve pra ter x conteúdo em todas as páginas #}
+    {% block conteudo %}{% endblock %}
+</body>
+</html>

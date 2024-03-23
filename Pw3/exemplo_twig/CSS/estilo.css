@@ -1,0 +1,9 @@
+body{
+    background-color: lavender;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#container1 {
+    display: flex;
+    gap: 10px;
+}

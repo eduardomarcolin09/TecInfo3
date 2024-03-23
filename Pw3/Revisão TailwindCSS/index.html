@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montagem de HTML com Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="ml-4">
+    <h1 class="text-4xl font-bold mt-4">Exercício com Tailwind CSS</h1>
+    <div class="flex mt-4 w-1/2">
+        <div class="p-2 border-gray-400 border-solid border-2 bg-gray-100 w-2/6"> 
+            <p>Preencha o formulário ao lado com suas informações.</p>
+            <p class="mt-2">Seus dados não serão compartilhados com terceiros</p>
+        </div>
+        <div class="w-full">
+            <form action="" class="">
+                    <div class="p-2">
+                        <div class="grid grid-cols-2 gap-2">
+                            <div>
+                                <label class="flex">Nome</label>
+                                <input type="text" id="nome" name="nome" class="border-gray-200 border-solid border-2 rounded-md w-full"/>
+                            </div>
+                            <div>
+                                <label class="block col-span-2">Sobrenome</label>
+                                <input type="text" id="sobrenome" name="sobrenome" class="border-gray-200 border-solid border-2 rounded-md w-full"/>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="mt-2">Usuário</label>
+                            <input type="text" id="nome" name="nome" placeholder=" Digite seu Usuário" class="border-gray-200 border-solid border-2 rounded-md pl-2"/>
+                            <label>Senha</label>
+                            <input type="password" id="senha" name="senha" placeholder="Digite sua Senha" class="border-gray-200 border-solid border-2 rounded-md pl-2"/>
+                        </div>
+                        <div class="text-center mt-2 bg-blue-500 p-2 rounded-md font-bold text-white"><button type="submit">Cadastrar</button></div>
+                    </div>
+        
+                </form>
+
+        </div>
+
+    </div>
+</body>
+</html>
