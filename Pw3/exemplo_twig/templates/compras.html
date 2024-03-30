@@ -14,7 +14,13 @@
 <p> Esta é sua lista de compras:</p>
 
 {% for indice, compra in compras %}
-    <li>{{compra.item}}</li> {# .item é o nome da coluna #}
+
+    <li>
+        {{compra.item}} {# .item é o nome da coluna #} | 
+        <a href="compras_pegando_alterar.php?indice={{compra.id}}">Alterar</a> - 
+        <a href="compras_apagar.php?indice={{compra.id}}">Excluir</a>
+    </li>    
+
 {% endfor %}
 
 
