@@ -1,6 +1,5 @@
 <?php 
-# compras.php
-
+// compras.php
 require('twig_carregar.php');
 require('inc/banco.php');
 

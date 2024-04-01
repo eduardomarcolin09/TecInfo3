@@ -1,5 +1,5 @@
 <?php 
-
+// compras_apagar.php
 require('inc/banco.php');
 
 $id = $_GET['indice'] ?? null;

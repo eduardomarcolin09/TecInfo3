@@ -1,6 +1,5 @@
 <?php 
-# compras_alterar_excluir.php
-
+// compras_pegando_alterar.php
 require('inc/banco.php');
 require('twig_carregar.php');
 
