@@ -1,0 +1,30 @@
+{# templates/compras.html #}
+{% extends "_base.html" %}
+{% block conteudo %}
+
+{% block titulo %}<title>Compromissos</title>{% endblock %}
+
+<h3>Adicionar Compromisso</h3>
+<form action="compromissos_adc.php" method="post">
+    <input type="text" name="descricao">
+    <input type="date" name="data">
+    <input type="submit" value="Adicionar">
+</form>
+
+<hr>
+
+<p> Este são seus compromissos</p>
+<table border='1'>
+    <th>Descrição</th>
+    <th>Data</th>
+    <th>Fim de semana</th>
+{% for indice, compromisso in compromissos %}
+    <tr>
+        <td>{{compromisso.descricao}}</td>
+        <td>{{compromisso.data}}</td>
+        <td>{{compromisso.fimdesemana ? 'Sim' : 'Não'}}</td>
+    </tr>
+{% endfor %}
+
+
+{% endblock %}
