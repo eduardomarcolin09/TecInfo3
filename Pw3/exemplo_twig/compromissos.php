@@ -11,6 +11,7 @@ $compromissos = $query->fetchAll(PDO::FETCH_ASSOC);
 for($i = 0 ; $i < count($compromissos) ; $i++){
     $data = $compromissos[$i]['data'];
     $compromissos[$i]['fimdesemana'] = Carbon::parse($data)->isWeekend();
+    $compromissos[$i]['data'] = date('d/m/Y');
 }
     //echo "<pre>";
     //var_dump($compromissos);
