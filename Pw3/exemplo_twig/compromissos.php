@@ -17,7 +17,6 @@ for($i = 0 ; $i < count($compromissos) ; $i++){
     //var_dump($compromissos);
     //die;
     
-    outro teste
 echo $twig->render('compromissos.html', [
     'compromissos' => $compromissos,
 ]);
