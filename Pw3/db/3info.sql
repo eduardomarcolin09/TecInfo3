@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 05-Abr-2024 às 16:08
+-- Tempo de geração: 18-Abr-2024 às 13:38
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -32,13 +32,6 @@ CREATE TABLE `compras` (
   `item` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Extraindo dados da tabela `compras`
---
-
-INSERT INTO `compras` (`id`, `item`) VALUES
-(13, 'sasasa');
-
 -- --------------------------------------------------------
 
 --
@@ -49,6 +42,29 @@ CREATE TABLE `compromissos` (
   `id` int(11) NOT NULL,
   `descricao` varchar(255) DEFAULT NULL,
   `data` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `compromissos`
+--
+
+INSERT INTO `compromissos` (`id`, `descricao`, `data`) VALUES
+(1, '13121', '2001-02-15'),
+(2, 'sdasdasda', '2001-02-15'),
+(3, 'teste', '2024-04-06'),
+(4, 'sdaasdasdsa', '2024-04-27'),
+(5, 'edu', '2024-04-24');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL,
+  `usuario` varchar(255) NOT NULL,
+  `senha` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -68,6 +84,12 @@ ALTER TABLE `compromissos`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices para tabela `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de tabelas despejadas
 --
 
@@ -81,6 +103,12 @@ ALTER TABLE `compras`
 -- AUTO_INCREMENT de tabela `compromissos`
 --
 ALTER TABLE `compromissos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT de tabela `usuarios`
+--
+ALTER TABLE `usuarios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
