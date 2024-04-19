@@ -11,9 +11,9 @@ if($usuarioY && $senhaY) {
     $dados->bindValue(':usuario', $usuarioY);
     $dados->execute();
     $usuarios = $dados->fetch(PDO::FETCH_ASSOC);
-    if($usuarioY = $usuarios['usuario'] && password_verify($senhaY, $usuarios['senha'])) {
-        header("location: base.php");
+    if($usuarioY == $usuarios['usuario'] && password_verify($senhaY, $usuarios['senha'])) {
         $_SESSION['usuario'] = $usuarioY;
+        header("location: base.php");
     }
     else {
         echo "Senha errada";
